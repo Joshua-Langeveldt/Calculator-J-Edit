@@ -1,0 +1,79 @@
+/* Default Css*/
+*,
+*::before,
+*::after {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+:has(h1,h2,h3,h4,h5,h6) {
+    text-align: center;
+    color: #a10512;
+    padding-top: 50px;
+    font-size: large;
+    font-family:fantasy;
+}
+
+
+
+body {
+    background-color: #7b7b7b;
+  }
+
+
+  /*Calculator styling*/
+  
+  table {
+margin: 100px 210px 180px 600px;  
+background-color: #a20404;
+    width: 295px;
+    max-width: 295px;
+    height: 325px;
+    text-align: center;
+    border-radius: 4px;
+    padding-right: 10px;
+  }
+  
+  input {
+    outline: 0;
+    position: relative;
+    left: 5px;
+    top: 5px;
+    border: 0;
+    color: #fff;
+    background-color: #000;
+    border-radius: 4px;
+    width: 60px;
+    height: 50px;
+    float: left;
+    margin: 5px;
+    font-size: 20px;
+    box-shadow: 0 4px rgba(0,0,0,0.2);
+    margin-bottom: 15px;
+  }
+  
+  
+  #display {
+    width: 265px;
+    max-width: 270px;
+    font-size: 26px;
+    text-align: right;
+    background-color: #FFF;
+    float: left;
+  }
+  
+  .operator {
+    background-color: #000;
+    position: relative;
+  }
+  
+  #clear {
+    float: left;
+    position: relative;
+    display: block;
+    background-color: rgb(54, 0, 247);
+  }
+
+  
