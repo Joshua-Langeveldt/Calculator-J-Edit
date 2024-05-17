@@ -17,12 +17,6 @@
 }
 
 
-
-body {
-    background-color: #7b7b7b;
-  }
-
-
   /*Calculator styling*/
   
   table {
@@ -30,14 +24,14 @@ margin: 100px 210px 180px 600px;
 background-color: #a20404;
     width: 295px;
     max-width: 295px;
-    height: 325px;
+    height: 350px;
     text-align: center;
     border-radius: 4px;
     padding-right: 10px;
+    box-shadow: 10px 10px 5px #32012F;
   }
   
   input {
-    outline: 0;
     position: relative;
     left: 5px;
     top: 5px;
@@ -55,14 +49,7 @@ background-color: #a20404;
   }
   
   
-  #display {
-    width: 265px;
-    max-width: 270px;
-    font-size: 26px;
-    text-align: right;
-    background-color: #FFF;
-    float: left;
-  }
+
   
   .operator {
     background-color: #000;
@@ -75,5 +62,42 @@ background-color: #a20404;
     display: block;
     background-color: rgb(54, 0, 247);
   }
+
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(to right, #e91e63, #3f51b5)
+  }
+  
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 37%;
+    transform: translate(-50%, -50%)    
+  }
+  
+  .textview {
+    width: 300px;
+    margin: 5px;
+    font-size: 25px;
+    padding: 5px;
+    border: none;
+  }
+  
+  .button {
+    width: 50px;
+    height: 50px;
+    margin: 4px;
+    margin-left: 11px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    background: black;
+    color: white;
+  }
+
+
 
   

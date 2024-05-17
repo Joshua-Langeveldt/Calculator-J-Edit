@@ -4,48 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    
     <title>Web_Calculator</title>
 </head>
 <body>
 
     <h1>The King Calculator</h1>
-    <form action="" name="Web_Calculator">
-        <table>
+    <div class="container">
+    <form name="form">
+            <table>
            <tr>
               <td colspan="4">
-                 <input type="text" name="display" id="display" disabled>
+               <input class="textview" id="textview" type="text" readonly placeholder="0"/>
                 
               </td>
            </tr>
            <tr>
-                 <td><input type="button" name="one" value="1"></td>
-                 <td><input type="button" name="two" value="2"></td>
-                 <td><input type="button" name="three" value="3"></td>
-                 <td><input type="button" class="operator" name="plus" value="+"></td>
-          </tr>
-          <tr>
-                 <td><input type="button" name="four" value="4" ></td>
-                 <td><input type="button" name="five" value="5" ></td>
-                 <td><input type="button" name="six" value="6" ></td>
-                 <td><input type="button" class="operator" name="minus" value="-"></td>
-          </tr>
-          <tr>
-                 <td><input type="button" name="seven" value="7"></td>
-                 <td><input type="button" name="eight" value="8"></td>
-                 <td><input type="button" name="nine" value="9" ></td>
-                 <td><input type="button" class="operator" name="multiply" value="x"></td>
-          </tr>
-          <tr>
-                 <td><input type="button" id="clear" name="clear" value="c"></td>
-                 <td><input type="button" name="zero" value="0"></td>
-                 <td><input type="button" name="equalto" value="="></td>
-                 <td><input type="button" class="operator" name="divide" value="/"></td>
-           
-           </tr>
-        </table>
-           <p>It doesn't work because there is no function applied</p>
+                 <td><input class="button" type="button" name="one"   onclick="insert(1)" value="1"></td>
+                 <td><input class="button" type="button" name="two"   onclick="insert(2)" value="2"></td>
+                 <td><input class="button" type="button" name="three" onclick="insert(3)" value="3"></td>
 
-     </form>
-    
+                 <td><input class="button operator" type="button" name="plus" onclick="insert('+')" value="+"></td>
+          </tr>
+          <tr>
+                 <td><input class="button" type="button" name="four"onclick="insert(4)" value="4" ></td>
+                 <td><input class="button" type="button" name="five"onclick="insert(5)" value="5" ></td>
+                 <td><input class="button" type="button" name="six"onclick="insert(6)" value="6" ></td>
+
+                 <td><input class="button" type="button" class="operator" name="minus"onclick="insert('-')" value="-"></td>
+          </tr>
+          <tr>
+                 <td><input class="button" type="button" name="seven"onclick="insert(7)" value="7"></td>
+                 <td><input class="button" type="button" name="eight"onclick="insert(8)" value="8"></td>
+                 <td><input class="button" type="button" name="nine"onclick="insert(9)" value="9" ></td>
+
+                 <td><input class="button" type="button" class="operator" name="multiply"onclick="insert('*')" value="x"></td>
+          </tr>
+          <tr>
+                 <td><input class="button" type="button" id="clear" name="clear"onclick="clean()" value="c"></td>
+                 <td><input class="button" type="button" name="zero" onclick="insert(0)" value="0"></td>
+                 <td><input class="button" type="button" name="dot" onclick="insert('.')" value="."></td>
+                 <td><input class="button" type="button" class="operator" name="divide" onclick="insert('/')" value="/"></td>
+           </tr>
+           <tr>
+              <td colspan="3">
+                  <input class="button" type="button" name="equalto" onclick="equal()" value="=" style="width: 129px; margin-right:60px;">
+              </td>
+              <td colspan="3">
+                  <input class="button" type="button" name="delete" onclick="del()" value="Del"  style="background-color:rgb(54, 0, 247); width:129px; margin-left:-70px;">
+              </td>
+          </tr>
+          
+        </table>
+         </form>
+
+
+         </div>
+
+   
+     <script src="script/code.js"></script>
 </body>
 </html> 
