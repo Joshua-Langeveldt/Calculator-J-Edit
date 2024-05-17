@@ -10,12 +10,19 @@
 
 function insert(num) {
     document.getElementById('textview').value = document.getElementById('textview').value + num
-   }
+    
+}
+
+
    
+   
+//This is the AC function
    function clean() {
        document.getElementById('textview').value = "";
    }
+
    
+   //This is the equal to function
    function equal() {
        let equ = document.getElementById('textview').value;
        if(equ) {
@@ -24,6 +31,7 @@ function insert(num) {
    }
    
    
+   //This is the delete function
    function del() {
        let equ = document.getElementById('textview').value;
        
@@ -31,14 +39,6 @@ function insert(num) {
    }
    
    
-   
-   function result() {
-
-    let equ = document.querySelector('[textInput]').value; 
-    if (equ) {
-        document.querySelector('[textInput]').value = eval(equ)
-    }f
-   }
    
    
    
